@@ -1,9 +1,10 @@
-#THIS IS A SAMPLE PROJECT WHICH CAN BE USED FOR LEARNING PURPOSES
+THIS IS A SAMPLE PROJECT WHICH CAN BE USED FOR LEARNING PURPOSES
 
-##THIS PROJECT IS ALL ABOUT USING SELENIUM TO AUTOMATE WEB BROWSING
-##C# IS THE SELECTED LANGUAGE IN THIS PROJECT BUT YOU CAN USE JAVA OR PYTHON
+THIS PROJECT IS ALL ABOUT USING SELENIUM TO AUTOMATE WEB BROWSING
+C# IS THE SELECTED LANGUAGE IN THIS PROJECT BUT YOU CAN USE JAVA OR PYTHON
 
-###FOR REFERENCES YOU CAN USE THE FOLLOWING SITES TO LEARN THE BASIC FUNDAMENTALS:
+FOR REFERENCES YOU CAN USE THE FOLLOWING SITES TO LEARN THE BASIC FUNDAMENTALS:
+
 SELENIUM:
 * http://toolsqa.com/selenium-c-sharp/
 * https://automatetheplanet.com/
@@ -14,24 +15,24 @@ UNIT TESTING:
 You might encounter the OLEDB error when uploading excel file:
 * https://stackoverflow.com/questions/18806613/no-solution-for-microsoft-ace-oledb-12-0-error
 
-###DEVELOPMENT TOOL USED:
+DEVELOPMENT TOOL USED:
 * Visual Studio 2017 (but you can used earlier version)
 
-####As you will notice there are 3 projects included in this solution.
+As you will notice there are 3 projects included in this solution.
 * AutoCore
 * PortableTestRunner
 * TestRunner
 
-####AutoCore:
+AutoCore:
 - This is the heart of the solution wherein the automation process takes place and it provides
   the necessary services and functionalities that other projects relies on this.
   
-####PortableTestRunner:
+PortableTestRunner:
 - This is a sample project that makes the automation user friendly since you'll only need to 
   run the application itself. You can see the application named "PortableTestRunner.exe" in 
   PortableTestRunner/Bin/Debug.
   
-####TestRunner:
+TestRunner:
 - I'll recommend this project if you want to learn more about using selenium with unit testing
   since this is the ideal setup for running automation and providing observable behavior in the
   long run.
