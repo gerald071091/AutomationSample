@@ -15,6 +15,10 @@ UNIT TESTING:
 You might encounter the OLEDB error when uploading excel file:
 * https://stackoverflow.com/questions/18806613/no-solution-for-microsoft-ace-oledb-12-0-error
 
+For loading chrome extension when automating browser:
+https://seleniumjava.com/2016/05/22/start-the-chrome-browser-with-extensions/
+-The chrome options for this steps is included in PageConfiguration.cs file
+
 DEVELOPMENT TOOL USED:
 * Visual Studio 2017 (but you can used earlier version)
 
