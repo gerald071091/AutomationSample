@@ -23,5 +23,11 @@
         /// Just Quit the operation
         /// </summary>
         void Quit();
+
+        /// <summary>
+        /// Switch back to main tab
+        /// </summary>
+        /// <returns></returns>
+        void GoToDefaultTab();
     }
 }

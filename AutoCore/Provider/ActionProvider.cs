@@ -73,5 +73,26 @@ namespace AutoCore
                 ex.Catch(_driver);
             }
         }
+
+        public void SwitchToDefault()
+        {
+            string currentHandle = _driver.CurrentWindowHandle;
+            string mainPage = null;
+
+            foreach (string handle in _driver.WindowHandles)
+            {
+                if (!handle.Equals(currentHandle))
+                {
+                    _driver.SwitchTo().Window(handle);
+                    _driver.Close();
+                }
+                else
+                {
+                    mainPage = handle;
+                }
+            }
+
+            _driver.SwitchTo().Window(mainPage);
+        }
     }
 }

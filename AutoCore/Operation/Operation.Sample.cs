@@ -30,6 +30,11 @@ namespace AutoCore
             _action.Quit();
         }
 
+        public void GoToDefaultTab()
+        {
+            _action.SwitchToDefault();
+        }
+
         
     }
 }

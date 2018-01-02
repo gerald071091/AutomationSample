@@ -35,5 +35,10 @@ namespace AutoCore
         /// Action Quit that ends the driver browser and it's session
         /// </summary>
         void Quit();
+
+        /// <summary>
+        /// Action SwitchToDefault that redirect the current session to main page.
+        /// </summary>
+        void SwitchToDefault();
     }
 }

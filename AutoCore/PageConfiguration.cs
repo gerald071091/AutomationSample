@@ -18,19 +18,23 @@ namespace AutoCore
                 {
                     {"ie", () =>
                         {
-                            InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-                            ieOptions.IntroduceInstabilityByIgnoringProtectedModeSettings = true;
-                            ieOptions.EnablePersistentHover = false;
-                            ieOptions.RequireWindowFocus = false;
-                            ieOptions.IgnoreZoomLevel = true;
-                            ieOptions.EnsureCleanSession = true;
+                            InternetExplorerOptions ieOptions = new InternetExplorerOptions{
+                                IntroduceInstabilityByIgnoringProtectedModeSettings = true,
+                                EnablePersistentHover = false,
+                                RequireWindowFocus = false,
+                                IgnoreZoomLevel = true,
+                                EnsureCleanSession = true
+                            };
+                            
                             return new InternetExplorerDriver(ieOptions);
                         }
                     },
                     {"chrome", () =>
                         {
+                            string pathToAdBlockerExtension = @"C:\Users\GeraldG\AppData\Local\Google\Chrome\User Data\Default\Extensions\bkkbcggnhapdmkeljlodobbkopceiche\4.0.6.1_0";
                             ChromeOptions chromeOptions = new ChromeOptions();
                             chromeOptions.AddArgument("test-type");
+                            chromeOptions.AddArgument("--load-extension=" + pathToAdBlockerExtension);
                             return new ChromeDriver(chromeOptions);
                         }
                     },
